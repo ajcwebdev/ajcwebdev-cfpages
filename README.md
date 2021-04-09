@@ -38,7 +38,7 @@ Click "Create a project."
 
 ![02-connect-git-repository](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acazjqgeohulu708dh2l.png)
 
-Select your React project and click the "Begin setup" button at the button.
+Select your React project and click the "Begin setup" button at the bottom.
 
 ![03-setup-build-and-deploy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1vt3zcziu2383nag0wlm.png)
 
