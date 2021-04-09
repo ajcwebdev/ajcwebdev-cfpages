@@ -8,24 +8,15 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -35,36 +26,55 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Cloudflare Pages](https://pages.cloudflare.com/) is a Jamstack platform for frontend developers to collaborate and deploy websites. You can replicate this repo by following these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Create a React app
 
-## Learn More
+```bash
+npx create-react-app ajcwebdev-cfpages
+cd ajcwebdev-cfpages
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a [blank repository](https://repo.new/) on GitHub with the same name as your React project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git branch -M main
+git remote add origin https://github.com/ajcwebdev/ajcwebdev-cfpages.git
+git push -u origin main
+```
 
-### Code Splitting
+Sign up for [Cloudflare Pages](https://pages.cloudflare.com/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![01-cloudflare-pages-dashboard](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a8v738niu7rzglxdhey3.png)
 
-### Analyzing the Bundle Size
+Click "Create a project."
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![02-connect-git-repository](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acazjqgeohulu708dh2l.png)
 
-### Making a Progressive Web App
+Select your React project and click the "Begin setup" button at the button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![03-setup-build-and-deploy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1vt3zcziu2383nag0wlm.png)
 
-### Advanced Configuration
+Your project name and production branch will be set automatically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![04-blank-build-settings](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/62o3bczyjj7qrco8x1qi.png)
 
-### Deployment
+The build settings are blank, but you can select the Create React App framework preset for the build command and publish directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![05-create-react-app-framework-preset](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gn7nuygoqcbossy4bmzf.png)
 
-### `yarn build` fails to minify
+Click "Save and deploy."
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![06-initializing-build](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t1gvisf2yie9bopvr9hj.png)
+
+Once the build finishes you will see the build and deployment settings at the bottom.
+
+![07-build-and-deployment-settings](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hztevixwe7gsyootr8w9.png)
+
+You will also see a link to your site at the top.
+
+![08-success-site-built-and-deployed](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yzvu77r1f15ydwt00snf.png)
+
+Click the link to [ajcwebdev-cfpages.pages.dev](https://ajcwebdev-cfpages.pages.dev/) and you should see the following page.
+
+![09-ajcwebdev-cfpages-deployed](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/thmui679mlk2se7japsb.png)
